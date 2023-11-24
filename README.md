@@ -7,6 +7,12 @@ Visão Geral da Solução Proposta:
 
 A solução proposta é um "Sistema de Alerta Precoce para Prevenção de Doenças". O sistema utiliza um sensor de temperatura (no caso, o DHT22) conectado a um ESP32 para monitorar a temperatura corporal. Dois LEDs são empregados para fornecer feedback visual em tempo real. Um LED branco indica que a temperatura está dentro da faixa normal, enquanto um LED vermelho alerta quando a temperatura ultrapassa um limiar estabelecido.
 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 Instruções para Configurar e Executar a Aplicação:
 
 Componentes Necessários:
@@ -36,7 +42,13 @@ Observe o comportamento dos LEDs em resposta à temperatura simulada.
 O LED branco deve permanecer aceso quando a temperatura está normal, e o LED vermelho deve acender quando a temperatura ultrapassar o limiar definido.
 Este sistema oferece uma maneira eficaz de monitorar a temperatura corporal e alertar sobre possíveis problemas de saúde, permitindo a intervenção precoce para evitar complicações cardiovasculares.
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 link para o projeto no wowki - > https://wokwi.com/projects/382236359867078657
+
+
 
 *CÓDIGO UTILIZADO LOGO ABAIXO*
 
