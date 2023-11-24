@@ -54,41 +54,41 @@ link para o projeto no wowki - > https://wokwi.com/projects/382236359867078657
 
 #include <DHT.h>
 
-#define DHT_PIN 16      // Pino ao qual o sensor DHT22 está conectado (pode ser alterado)
-#define LED_PIN_RED 2    // Pino do LED vermelho
-#define LED_PIN_WHITE 4  // Pino do LED branco
-#define TEMPERATURE_THRESHOLD 37.5  // Limiar de temperatura para acender o LED vermelho
-
-DHT dht(DHT_PIN, DHT22);
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(LED_PIN_RED, OUTPUT);
-  pinMode(LED_PIN_WHITE, OUTPUT);
-
-  dht.begin();
-}
-
-void loop() {
-  float temperatura = dht.readTemperature();
-
-  Serial.print("Temperatura Real: ");
-  Serial.print(temperatura);
-  Serial.println(" °C");
-
-  // Atualiza a cor do LED com base na temperatura lida
-  if (temperatura > TEMPERATURE_THRESHOLD) {
-    // Temperatura alta - LED vermelho
-    digitalWrite(LED_PIN_RED, HIGH);
-    digitalWrite(LED_PIN_WHITE, LOW);
-  } else {
-    // Temperatura normal - LED branco
-    digitalWrite(LED_PIN_RED, LOW);
-    digitalWrite(LED_PIN_WHITE, HIGH);
-  }
-
-  delay(2000);  // Aguarda 2 segundos entre leituras
-}
+#define DHT_PIN 16      // Pino ao qual o sensor DHT22 está conectado (pode ser alterado) <br>
+#define LED_PIN_RED 2    // Pino do LED vermelho <br>
+#define LED_PIN_WHITE 4  // Pino do LED branco <br>
+#define TEMPERATURE_THRESHOLD 37.5  // Limiar de temperatura para acender o LED vermelho <br>
+<br>
+DHT dht(DHT_PIN, DHT22);<br>
+<br>
+void setup() { <br>
+  Serial.begin(115200); <br>
+  pinMode(LED_PIN_RED, OUTPUT); <br>
+  pinMode(LED_PIN_WHITE, OUTPUT); <br>
+<br>
+  dht.begin();<br>
+}<br>
+<br>
+void loop() {<br>
+  float temperatura = dht.readTemperature();<br>
+<br>
+  Serial.print("Temperatura Real: ");<br>
+  Serial.print(temperatura);<br>
+  Serial.println(" °C");<br>
+<br>
+  // Atualiza a cor do LED com base na temperatura lida<br>
+  if (temperatura > TEMPERATURE_THRESHOLD) {<br>
+    // Temperatura alta - LED vermelho<br>
+    digitalWrite(LED_PIN_RED, HIGH);<br>
+    digitalWrite(LED_PIN_WHITE, LOW);<br>
+  } else {<br>
+    // Temperatura normal - LED branco<br>
+    digitalWrite(LED_PIN_RED, LOW);<br>
+    digitalWrite(LED_PIN_WHITE, HIGH);<br>
+  }<br>
+<br>
+  delay(2000);  // Aguarda 2 segundos entre leituras<br>
+}<br>
 
 
 
